@@ -1,10 +1,12 @@
 package application;
 
+import boardgame.Bord;
+
 public class Program {
 
 	public static void main(String[] args) {
      
-		System.out.println("hollo world");
+		Bord bord = new Bord(8, 8);
 
 	
 	}
