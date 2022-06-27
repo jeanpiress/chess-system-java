@@ -2,13 +2,13 @@ package boardgame;
 
 public class Bord {
 
-     private Integer rows;
-     private Integer columns;
+     private int rows;
+     private int columns;
      private Piece[][] pieces;
 	
      
-     public Bord(Integer rows, Integer columns) {
-    	 if(rows < 0 || columns < 0 ) {
+     public Bord(int rows, int columns) {
+    	 if(rows < 1 || columns < 1 ) {
     		 throw new BordException("Error creating bord: there must be at least 1 row and 1 column");
     	 }
 		this.rows = rows;
@@ -17,17 +17,17 @@ public class Bord {
      }
 
 
-	public Integer getRows() {
+	public int getRows() {
 		return rows;
 	}
 
-	public Integer getColumns() {
+	public int getColumns() {
 		return columns;
 	}
 
      public Piece piece(int row, int column) {
     	if(!positionExists(row, column)) {
-    		throw new BordException("position not on the bord");
+    		throw new BordException("position not on the board");
     		
     	}
     	 return pieces[row][column];
