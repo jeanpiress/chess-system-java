@@ -8,6 +8,7 @@ import boardgame.Bord;
 import boardgame.Piece;
 import boardgame.Position;
 import chess.pieces.King;
+import chess.pieces.Pawn;
 import chess.pieces.Rook;
 
 public class ChessMatch {
@@ -205,12 +206,29 @@ public class ChessMatch {
      }
 
       private void initialSetup() {
-    	  placeNewPiece('h', 7, new Rook(bord, Color.WHITE));
-          placeNewPiece('d', 1, new Rook(bord, Color.WHITE));
+    	  placeNewPiece('a', 1, new Rook(bord, Color.WHITE));
           placeNewPiece('e', 1, new King(bord, Color.WHITE));
+          placeNewPiece('h', 1, new Rook(bord, Color.WHITE));
+          placeNewPiece('a', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('b', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('c', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('d', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('e', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('f', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('g', 2, new Pawn(bord, Color.WHITE));
+          placeNewPiece('h', 2, new Pawn(bord, Color.WHITE));
 
-          placeNewPiece('b', 8, new Rook(bord, Color.BLACK));
-          placeNewPiece('a', 8, new King(bord, Color.BLACK));
+          placeNewPiece('a', 8, new Rook(bord, Color.BLACK));
+          placeNewPiece('e', 8, new King(bord, Color.BLACK));
+          placeNewPiece('h', 8, new Rook(bord, Color.BLACK));
+          placeNewPiece('a', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('b', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('c', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('d', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('e', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('f', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('g', 7, new Pawn(bord, Color.BLACK));
+          placeNewPiece('h', 7, new Pawn(bord, Color.BLACK));
       }
 
 
